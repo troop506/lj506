@@ -10,9 +10,8 @@ from setuptools import setup
 
 if __name__ == "__main__":
     try:
-        setup(use_scm_version={"root": "..", "relative_to": __file__})
+        setup(use_scm_version={"version_scheme": "no-guess-dev"})
     except:  # noqa
-        raise
         print(
             "\n\nAn error occurred while building the project, "
             "please ensure you have the most updated version of setuptools, "
